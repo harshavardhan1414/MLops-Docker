@@ -1,0 +1,15 @@
+to get all the packages
+pip freeze > requirements.txt
+to create virtual environment
+--> python -m venv venv
+-->venv\Scripts\activate
+
+after knowing versions
+ type new file name as dockerfile
+
+build docker image: docker build -t flask-app .
+run the container: docker run -p 5000:5000 flask-app
+tag ur image:docker tag flask-app Harsha201403/flask-app:latest1
+docker push Harsha201403/mlops-docker:latest1
+
+docker pull Harsha201403/mlops-docker:latest1
